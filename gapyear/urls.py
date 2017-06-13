@@ -4,5 +4,6 @@ from django.conf import settings
 from gapyear import views
 
 urlpatterns = [
-    url(r'^$', views.home_page, name='home_page')
+    url(r'^$', views.home_page, name='home_page'),
+    url(r'^nextpage/$', views.next_page)
 ]
