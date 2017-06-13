@@ -18,7 +18,7 @@ from .permissions import IsGroupOrReadOnly
 class FileUploadView(APIView):
     """File Upload methods"""
     parser_classes = (MultiPartParser, FormParser)
-    permission_classes = [IsGroupOrReadOnly]
+    permission_classes = (IsGroupOrReadOnly, )
 
     def put(self, request):
         """
