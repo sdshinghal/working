@@ -58,6 +58,7 @@ class FileDetail(generics.RetrieveUpdateDestroyAPIView):
     """
     Details of file
     """
+    permission_classes = [IsAuthenticated]
     queryset = File.objects.all()
     serializer_class = FileUploadSerializer
 

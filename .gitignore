@@ -1,2 +1,8 @@
+__pycache__
+*.pyc
+db.sqlite3
 .idea/
+.env/
 migrations/
+static/
+uploaded_media/
