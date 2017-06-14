@@ -21,6 +21,6 @@ from django.conf import settings
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'fileupload', include('fileupload.urls')),
-    url(r'gapyear', include('gapyear.urls'))
+    url(r'fileupload/', include('fileupload.urls')),
+    url(r'gapyear/', include('gapyear.urls'))
 ]

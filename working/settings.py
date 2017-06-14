@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'fileupload',
     'rest_framework',
-    'gapyear'
+    'gapyear',
+    'rules'
 ]
 
 MIDDLEWARE = [
@@ -69,6 +70,11 @@ TEMPLATES = [
         },
     },
 ]
+
+AUTHENTICATION_BACKENDS = (
+    'rules.permissions.ObjectPermissionBackend',
+    'django.contrib.auth.backends.ModelBackend',
+)
 
 WSGI_APPLICATION = 'working.wsgi.application'
 
